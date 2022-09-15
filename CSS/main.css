@@ -1,10 +1,7 @@
 *{
     box-sizing: border-box;
 }
-body{    
-    font-family:'Montserrat', sans-serif;
 
-}
 .nav-link{
     color: black;
 }
@@ -33,7 +30,7 @@ body{
     margin: 20px;
     text-align: center;
 }
-.texto-main span{
+span{
     color: rgb(13, 22, 153);
 }
 .footer {    
@@ -58,6 +55,10 @@ body{
     display: flex;
     padding: 50px 15px 0 0;    
 }
+textarea .form-control{
+    resize: none;
+}
+
 
 @media screen and (max-width:680px){
     .row-redes ul{
