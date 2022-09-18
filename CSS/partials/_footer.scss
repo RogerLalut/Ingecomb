@@ -1,0 +1,27 @@
+
+.footer {    
+    display: flex;
+    justify-content: space-between;
+    color: #f5f7f8;  
+    background-color: #292727;
+
+    .row-datos ul{        
+        padding-top: 20px;
+        list-style: none;
+
+        li:nth-child(5){
+            margin: 0;
+            border-top: 1px solid #3498DB;
+        }
+    }
+    .row-redes ul{
+        list-style: none;
+        display: flex;
+        padding: 50px 15px 0 0;  
+        
+        li{
+            padding: 20px;
+        }
+    }
+
+}

@@ -1,0 +1,14 @@
+.header .navbar{
+    background-color: #f5f7f8;
+
+    .nav-link{
+        color: black;
+        font-size: large;
+        &:hover{
+            color: #3498DB;
+        }
+        &:active{
+            color: #3498DB;
+        }
+    }     
+}
