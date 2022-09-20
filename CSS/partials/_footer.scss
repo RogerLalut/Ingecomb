@@ -5,23 +5,41 @@
     color: #f5f7f8;  
     background-color: #292727;
 
-    .row-datos ul{        
-        padding-top: 20px;
-        list-style: none;
+    .row-datos {
+        ul{        
+            padding-top: 20px;
+            list-style: none;
 
-        li:nth-child(5){
-            margin: 0;
-            border-top: 1px solid #3498DB;
+            li:nth-child(5){
+                margin: 0;
+                border-top: 1px solid #3498DB;
+            }
         }
     }
-    .row-redes ul{
-        list-style: none;
-        display: flex;
-        padding: 50px 15px 0 0;  
+    .row-redes {
+        ul{
+            list-style: none;
+            display: flex;
+            padding: 50px 15px 0 0;  
         
-        li{
-            padding: 20px;
+            li{
+                padding: 20px;
+            }
         }
     }
+}
 
+@media (max-width:680px){
+    .footer {            
+        .row-redes {
+            ul{
+                flex-direction: column;   
+                padding: 20px 10px 0 0;
+            
+                li{
+                    padding: 5px;
+                }
+            }
+        }
+    }
 }
