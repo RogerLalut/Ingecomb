@@ -1,8 +1,8 @@
 .header .navbar{
-    background-color: #f5f7f8;
+    background-color:map-get($colores,backgroundHeader);
 
     .nav-link{
-        color: black;
+        color: map-get($colores, textColorHeader );
         font-size: large;
         &:hover{
             color: #3498DB;

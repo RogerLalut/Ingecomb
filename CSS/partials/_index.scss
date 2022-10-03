@@ -33,9 +33,10 @@
             object-fit:cover;
         }
         .btn-card{
-            position: absolute;
-            left: 30%;
-            bottom: 5%;
+            @extend %buttonCards;
+            background-color: rgb(27, 102, 71);
+            border-color: rgb(10, 44, 30);
+            
         }
     }
     
