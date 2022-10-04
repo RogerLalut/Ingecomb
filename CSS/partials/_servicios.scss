@@ -1,0 +1,94 @@
+.encabezado{
+    justify-content: center;
+    text-align: center;
+    margin: 30px 0 50px 0;
+}
+.card {
+border: none;
+}
+h1{
+    font-size:40px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 2em 0 2em 0;
+    color: #55565b;
+}
+p {
+    text-align: center;
+    color: #55565b;
+    text-align: start;
+    margin: 1rem 2rem 5rem 2rem;
+    font-size:20px;
+}
+
+h3{
+font-weight: bolder;
+text-align: center;
+margin: 0px 0 30px 0;
+color: #55565b;
+}
+h4{
+    font-weight: bolder;
+    text-align: center;
+    margin: 0px 0 30px 0;
+    color: #55565b;
+    }
+
+.vgr-cards {
+.card {
+    display: flex;
+    flex-flow: wrap;
+    flex: 100%;
+    margin-bottom: 40px;
+
+    &:nth-child(even) .card-img-body {
+    order: 2;
+    }
+
+    &:nth-child(even) .card-body {
+    padding-left: 0;
+    padding-right: 1.25rem;
+    }
+
+    @media (max-width: 576px) {
+    display: block;
+    }
+}
+
+.card-img-body {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+
+    @media (max-width: 576px) {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    }
+}
+
+
+.card-img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    @media (max-width: 1140px) {
+    margin: 0;
+    transform: none;
+    width: 100%;
+    height: auto;
+    }
+}
+
+.card-body {
+    flex: 2;
+    padding: 0 0 0 1.25rem;
+
+    @media (max-width: 576px) {
+    padding: 0;
+    }
+}
+}

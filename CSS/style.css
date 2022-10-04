@@ -33,6 +33,101 @@
   padding: 20px;
 }
 
+.encabezado {
+  justify-content: center;
+  text-align: center;
+  margin: 30px 0 50px 0;
+}
+
+.card {
+  border: none;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 2em 0 2em 0;
+  color: #55565b;
+}
+
+p {
+  text-align: center;
+  color: #55565b;
+  text-align: start;
+  margin: 1rem 2rem 5rem 2rem;
+  font-size: 20px;
+}
+
+h3 {
+  font-weight: bolder;
+  text-align: center;
+  margin: 0px 0 30px 0;
+  color: #55565b;
+}
+
+h4 {
+  font-weight: bolder;
+  text-align: center;
+  margin: 0px 0 30px 0;
+  color: #55565b;
+}
+
+.vgr-cards .card {
+  display: flex;
+  flex-flow: wrap;
+  flex: 100%;
+  margin-bottom: 40px;
+}
+.vgr-cards .card:nth-child(even) .card-img-body {
+  order: 2;
+}
+.vgr-cards .card:nth-child(even) .card-body {
+  padding-left: 0;
+  padding-right: 1.25rem;
+}
+@media (max-width: 576px) {
+  .vgr-cards .card {
+    display: block;
+  }
+}
+.vgr-cards .card-img-body {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 576px) {
+  .vgr-cards .card-img-body {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+}
+.vgr-cards .card-img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 1140px) {
+  .vgr-cards .card-img {
+    margin: 0;
+    transform: none;
+    width: 100%;
+    height: auto;
+  }
+}
+.vgr-cards .card-body {
+  flex: 2;
+  padding: 0 0 0 1.25rem;
+}
+@media (max-width: 576px) {
+  .vgr-cards .card-body {
+    padding: 0;
+  }
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -79,7 +174,7 @@
   text-align: center;
 }
 .main .texto-main h1 span {
-  color: rgb(13, 22, 153);
+  color: rgb(16, 29, 201);
 }
 .main .texto-main p {
   margin-left: 25px;
@@ -97,8 +192,14 @@
      object-fit: cover;
 }
 .main .card .btn-card {
-  background-color: rgb(27, 102, 71);
-  border-color: rgb(10, 44, 30);
+  background-color: rgb(27, 51, 102);
+  border-color: rgb(15, 10, 44);
+}
+.main .card h5 {
+  font-weight: bolder;
+  text-align: center;
+  margin: 0px 0 30px 0;
+  color: #55565b;
 }
 
 .row {
@@ -128,6 +229,12 @@
   font-size: larger;
 }
 .contenedor h3 {
+  font-weight: bolder;
+  text-align: center;
+  margin: 0px 0 30px 0;
+  color: #55565b;
+}
+.contenedor h2 {
   font-weight: bolder;
   text-align: center;
   margin: 0px 0 30px 0;
