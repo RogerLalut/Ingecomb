@@ -1,14 +1,31 @@
+.row {
+  --bs-gutter-x: 0;
+}
+.row-encabezado {
+  margin: 30px;
+  text-align: center;
+  justify-content: center;
 
-.row{
-    --bs-gutter-x: 0;
-}
-.row-encabezado{
-    margin: 30px;
-    text-align: center;
+  .text-galeria {
+    display: flex;
+    margin-bottom: 0;
     justify-content: center;
+  }
 }
-.galeria-row{
-    img{
-        padding: 20px;
+.galeria-row {
+    .columnas{
+    overflow: hidden;
     }
+  img {
+    object-fit: cover;
+    padding: 20px;
+    &:hover{
+        transform: scale(1.1);
+        transition: all 0.5s;
+    }
+    &:active{
+        transform: scale(1.1);
+        transition: all 0.5s;
+    }
+  }
 }

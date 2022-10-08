@@ -8,24 +8,31 @@
 
     .texto-main{
         h1{
-            margin: 15px;
+            margin: 35px 0 50px 0;
             text-align: center;
 
             span{
                 color: rgb(16, 29, 201);
+                &:hover{
+                    color: #0a53be
+                }
+                &:active{
+                    color: #0a53be;
+                }
             }
         }
-        p{
-            margin-left: 25px;
-            margin-right: 25px;            
+        .textPmain{
+            margin-left: 100px;
+            margin-right: 80px;    
+            
         }
         
     }
 
     .card{
-        width: 21rem;
+        width: 25rem;
         height: 25rem;
-        margin: 10px;
+        margin: 50px;
 
         img{
             max-width: 25rem;
@@ -34,17 +41,25 @@
         }
         .btn-card{
             @extend %buttonCards;
-            background-color: rgb(27, 51, 102);
-            border-color: rgb(15, 10, 44);
-            
+            margin-left: 30px;
+            @include boton($backcolor:#0d6efd, $border: #0c57c7 solid 3px); 
+            &:hover{
+                background-color: #0a53be;
+            }
+            &:active{
+                background-color: #0a53be;
+            }  
         }
         
         h5{
             font-weight: bolder;
             text-align: center;
             margin: 0px 0 30px 0;
-            color: #55565b;
+            color: map-get($colores, textColorHeader);
             
+        }
+        .card-text{
+            margin: 0;
         }
     }
     

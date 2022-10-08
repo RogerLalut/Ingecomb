@@ -28,9 +28,27 @@
   text-align: center;
   justify-content: center;
 }
+.row-encabezado .text-galeria {
+  display: flex;
+  margin-bottom: 0;
+  justify-content: center;
+}
 
+.galeria-row .columnas {
+  overflow: hidden;
+}
 .galeria-row img {
+  -o-object-fit: cover;
+     object-fit: cover;
   padding: 20px;
+}
+.galeria-row img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.galeria-row img:active {
+  transform: scale(1.1);
+  transition: all 0.5s;
 }
 
 .encabezado {
@@ -95,6 +113,10 @@ h4 {
   flex: 1;
   overflow: hidden;
   position: relative;
+}
+.vgr-cards .card-img-body .card-img {
+  max-width: 26rem;
+  max-height: 17rem;
 }
 @media (max-width: 576px) {
   .vgr-cards .card-img-body {
@@ -170,20 +192,26 @@ h4 {
   padding: 10px 0 10px 0;
 }
 .main .texto-main h1 {
-  margin: 15px;
+  margin: 35px 0 50px 0;
   text-align: center;
 }
 .main .texto-main h1 span {
   color: rgb(16, 29, 201);
 }
-.main .texto-main p {
-  margin-left: 25px;
-  margin-right: 25px;
+.main .texto-main h1 span:hover {
+  color: #0a53be;
+}
+.main .texto-main h1 span:active {
+  color: #0a53be;
+}
+.main .texto-main .textPmain {
+  margin-left: 100px;
+  margin-right: 80px;
 }
 .main .card {
-  width: 21rem;
+  width: 25rem;
   height: 25rem;
-  margin: 10px;
+  margin: 50px;
 }
 .main .card img {
   max-width: 25rem;
@@ -192,14 +220,26 @@ h4 {
      object-fit: cover;
 }
 .main .card .btn-card {
-  background-color: rgb(27, 51, 102);
-  border-color: rgb(15, 10, 44);
+  margin-left: 30px;
+  border-radius: 5px;
+  color: #f3f3f3;
+  background-color: #0d6efd;
+  border-bottom: #0c57c7 solid 3px;
+}
+.main .card .btn-card:hover {
+  background-color: #0a53be;
+}
+.main .card .btn-card:active {
+  background-color: #0a53be;
 }
 .main .card h5 {
   font-weight: bolder;
   text-align: center;
   margin: 0px 0 30px 0;
   color: #55565b;
+}
+.main .card .card-text {
+  margin: 0;
 }
 
 .row {
@@ -249,7 +289,7 @@ h4 {
 .contenedor .text-row {
   width: 80%;
   position: relative;
-  left: 100px;
+  left: 50px;
 }
 .contenedor .text-row p {
   margin-bottom: 3rem;
